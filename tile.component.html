@@ -1,0 +1,13 @@
+<td>
+        <img [src]='imagepath + tile.image'> 
+       </td>
+    <td>{{tile.name}}</td>
+    <td>{{tile.model}}</td>
+    <td>{{tile.price | currency:['INR']}}</td><!-- for indian currency --> 
+    <!-- <td>{{tile.price | currency}}</td>for Dollar currency -->
+    <td>
+            <app-star [rating]='tile.rating'></app-star>
+            <!-- {{tile.rating}} -->
+
+    </td>
+    <td>{{tile.status |status}}</td>
